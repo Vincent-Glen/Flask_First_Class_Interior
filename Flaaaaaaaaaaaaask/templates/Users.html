@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <!-- This line is about adjusting the width size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- link to Bootstrap 5 CDN CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <!-- link to Google Fonts used -->
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+        <!-- icon references -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css')}}" />
+    
+        <link href="" rel="icon" type="icon type">
+    
+        <title>Captivate Interiors</title>
+       </head>
+<body>
+    <header id="up" class="row container-fluid p-0 m-0">
+        <div class="col-3"><a href="../HTML/home.html"><img src="https://iili.io/Ht1FcwQ.png" width="80px" height="auto" style="margin: 5px;"></a></div>
+        <div class="col-6 py-3 text-center"><h1 id="heading">Captivate interiors</h1></div>
+        <div class="col-3 offset"></div>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm p-0 m-0">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+                <a href="{{ url_for('shop') }}" class="navbar-brand">Shop</a>
+                <a href="{{ url_for('about') }}" class="navbar-brand">About</a>
+                <a href="{{ url_for('contact') }}" class="navbar-brand">Contact</a>
+                <a href="{{ url_for('login') }}" class="navbar-brand">Login</a>
+                <a href="{{ url_for('Users') }}" class="navbar-brand">Users</a>
+              </ul>
+        </div>
+    </nav>
+	<h3>Profiles</h3>
+	<a href="/login">ADD</a>
+	<br>
+	<table>
+		<thead>
+			<th>Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Age</th>
+			<th>#</th>
+		</thead>
+		{% for data in profiles %}
+		<tbody>
+			<td>{{data.id}}</td>
+			<td>{{data.first_name}}</td>
+			<td>{{data.last_name}}</td>
+			<td>{{data.age}}</td>
+			<td><a href="/delete/{{data.id}}" type="button">Delete</a></td>
+		</tbody>
+		{% endfor%}
+	</table>
+</body>
+</html>
