@@ -1,0 +1,52 @@
+/* Covering the header, footer, and also the arrow feature at the bottom right */
+#heading {
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    padding-top: 5px;
+    color: white;
+}
+
+#up {
+    background-color: #2c2c2c;
+}
+
+.navbar {
+    background-color: #2c2c2c;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 10px;
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    background-color: #a48444;
+    color: #2c2c2c;
+}
+.navbar a.active {
+    background-color: #a48444;
+    color: white;
+    font-weight: bold;
+}
+
+#go_up i {
+    float: right;
+    color: black;
+    opacity: 0.5;
+}
+#go_up i:hover {
+    opacity: 1.0;
+}
+
+#footer {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#footer h3 {
+    font-size:larger;
+}
+#footer i {
+    width: 60px;
+    height: 60px;
+    color: white;
+}

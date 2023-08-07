@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link to Bootstrap 5 CDN CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- link to Google Fonts used -->
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+ 
+     <!-- icon references -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about_us.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css')}}" />
+
+    <link href="../Images/New_Logo1.png" rel="icon" type="icon type">
+    <title>About Us</title>
+</head>
+<body style="background-color: #f0edc7; font-family: 'Josefin Sans', sans-serif;">
+    <header id="up" class="row container-fluid p-0 m-0">
+      <div class="col-3"><a href="../HTML/home.html"><img src="https://iili.io/Ht1FcwQ.png" width="80px" height="auto" style="margin: 5px;"></a></div>
+      <div class="col-6 py-3 text-center"><h1 id="heading">Captivate interiors</h1></div>
+      <div class="col-3 offset"></div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm p-0 m-0">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+                <a href="{{ url_for('shop') }}" class="navbar-brand">Shop</a>
+                <a href="{{ url_for('about') }}" class="navbar-brand">About</a>
+                <a href="{{ url_for('contact') }}" class="navbar-brand">Contact</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container pt-5">
+      <!-- CEO and MD section -->
+        <section class="row">
+          <div class="col-6">            
+            <a href="https://www.flaticon.com/free-icons/person" target="_blank" title="person icons"><img id="the_image" src="https://iili.io/Ht1Buzx.png" width="300px" style="float:right;"></a>
+          </div>
+          <div class="col-4">
+            <h2 id="ceo_md_name" style="font-weight: bold;">Valentina Carter</h2>
+            <h3 id="the_titles">Chief Executive Officer of First Class Interiors</h3>
+            <h4 id="the_roles" style="font-style:italic;">Designer</h4>
+            <p id="about-quote">Valentina established First Class Interiors with Dayton in 2010. She has been designing and working in the building industry for more than 20 years and has vast experience in commercial and residential projects, from office fit outs to cafes and private homes.</p>
+            <p id="message" style="font-style:italic;"><strong>'A good interior affects how comfortable you are with the space.'</strong></p>
+            <button id="MD_btn" onclick="changeInfo()" type="submit" class="btn btn-info mt-2">Our MD</button>
+          </div>
+        </section>
+        <div class="row text-center mt-5 mb-3">
+          <h2>The Staff</h2> 
+        </div>
+        <!-- The staff section -->
+        <section class="row">
+          <div class="col">
+            <div class="card h-100" id="staff1">
+              <a href="#" id="hide1" onclick="hideStaff1()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton1()" src="https://iili.io/Ht1BAWQ.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Finn Berger</h4>
+                <p class="card-text"><strong>Accountant</strong><br>Finn takes care of our accounts, making sure fee and product claims are all on track to ensure the best client experience.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff2">
+              <a href="#" id="hide2" onclick="hideStaff2()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton2()" src="https://iili.io/Ht1BIbj.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Gary Fields</h4>
+                <p class="card-text"><strong>Senior Interior Designer</strong><br>Gary's talent is driven by his passion for design and a love of all elements related to interior design, whether architecture, art, furniture design, product design or textiles.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff3">
+              <a href="#" id="hide3" onclick="hideStaff3()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton3()" src="https://iili.io/Ht1BRsV.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Selin Osborn</h4>
+                <p class="card-text"><strong>Senior Interior Architect</strong><br>From renovations to new builds Selin has the versatility and experience to manage and deliver every aspect of a design project.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff4">
+              <a href="#" id="hide4" onclick="hideStaff4()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton4()" src="https://iili.io/Ht1B7qB.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Niam Rosario</h4>
+                <p class="card-text"><strong>Interior Architect</strong><br>Niam has always had a passion for interiors and architecture, and has been fortunate to travel around the world and see first-hand many famous, constantly-inspiring architecturally designed buildings.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff5">
+              <a href="#" id="hide5" onclick="hideStaff5()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton5()" src="https://iili.io/Ht1BY0P.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Mariyah Butler</h4>
+                <p class="card-text"><strong>Administrator</strong><br>Mariyah looks after our administration and provides office support to our team. Mariyah’s passion is to travel-and-learn and apply this to life and work!</p>                                
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- Hide/Show-All Button -->
+    <div class="row container-fluid p-0 py-3">
+      <div class="col-3 offset"></div>
+      <div class="col-6">
+        <button id="all_staff" onclick="hideShowAll()" type="submit" class="btn btn-info mt-2">Hide All</button>
+      </div>
+      <div class="col-3 p-2" id="go_up">
+          <a href="#up"><i class="fa-solid fa-circle-arrow-up fa-3x"></i></a>
+      </div>            
+    </div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+          <div class="row text-center pt-3">
+              <h3>Follow First Class Interiors</h3>
+          </div>
+          <div class="row text-center">
+              <section class="col offset"></section>
+              <section class="col-1">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>                       
+              </section>
+              <section class="col-1">
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://nz.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              </section>
+              <section class="col offset"></section>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center pb-2">
+              © 2022 Copyright: All rights reserved.
+          </div>
+          <!-- Copyright -->
+      </div>
+  </footer>
+    
+    <script src="../Javascript/about_us.js"></script>
+</body>
+</html>

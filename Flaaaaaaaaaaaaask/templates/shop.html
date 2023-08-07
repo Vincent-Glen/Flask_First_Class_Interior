@@ -1,0 +1,238 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link to Bootstrap 5 CDN CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- link to Google Fonts used -->
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+ 
+     <!-- icon references -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='shop.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css')}}" />
+
+    <link href="../Images/New_Logo1.png" rel="icon" type="icon type">
+    <title>Shop</title>
+</head>
+<body style="background-color: #f0edc7; font-family: 'Josefin Sans', sans-serif;">
+    <header id="up" class="row container-fluid p-0 m-0">
+      <div class="col-3"><a href="../HTML/home.html"><img src="https://iili.io/Ht1FcwQ.png" width="80px" height="auto" style="margin: 5px;"></a></div>
+      <div class="col-6 py-3 text-center"><h1 id="heading">Captivate interiors</h1></div>
+      <div class="col-3 offset"></div>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm p-0 m-0">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+                <a href="{{ url_for('shop') }}" class="navbar-brand">Shop</a>
+                <a href="{{ url_for('about') }}" class="navbar-brand">About</a>
+                <a href="{{ url_for('contact') }}" class="navbar-brand">Contact</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center pt-3">
+      <!-- Short video section -->
+      <div class="row">
+          <a href="../HTML/contact_us.html" style="text-decoration:none; font-family: 'Dancing Script', cursive;color:#3c2414;"><h2>Want to design your own space?</h2></a>
+          <figure>
+              <video width="auto" height="300" controls>
+              <source src="../Images/short_video.mp4" type="video/mp4">
+              <source src="../Images/sfx_audience_cheer_02.ogg" type="video/ogg">
+              Your browser does not support the video tag
+              </video>
+              <figcaption style="font-style:italic;">
+                  Courtesy of 
+                  <a href="https://dribbble.com/shots/7549049-Living-Room" target="__blank" style="font-style:italic; text-decoration:none; color: #a48444;">Guillaume Kurkdjian</a>
+                  and
+                  <a href="https://youtu.be/jFVguCEVAUs" target="__blank" style="font-style:italic; text-decoration:none; color: #a48444;"> Starry Attic</a>
+              </figcaption>
+          </figure>
+          <a href="../HTML/contact_us.html"><button type="submit" class="btn btn-info">Contact us now!</button></a>
+        </div>
+      
+        <!-- Homewares section -->
+      <h2 class="pt-5 pb-2"><strong>Homewares</strong></h2>
+      <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CoEN.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Classic White Duvet Cover Set</b>
+                  <br>Made of 100% cotton, sustainable and timeless.
+                </p>
+                <h5 class="card-title">$30.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CBQR.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Purple Duvet Cover</b>
+                  <br>An elegant duvet cover to bring more style to your bed.
+                </p>
+                <h5 class="card-title">$20.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1Cd21.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Dark Purple Duvet with Collage Pillowcase</b>
+                  <br>A mix of elegance and fun!
+                </p>
+                <h5 class="card-title">$60.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CI2t.jpgg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Striped Bedding Sheet Set</b>
+                  <br>A stylish set for kids.
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CHrP.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Darkwood Dining Table 4 Chairs</b>
+                  <br>Instantly bring modern touch to your dining area.
+                </p>
+                <h5 class="card-title">$100.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CnBp.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>White Dining Table 4 Chairs</b>
+                  <br>Smooth to the eye and to the touch.
+                </p>
+                <h5 class="card-title">$110.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1C3kg.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Flowers Wallpaper</b>
+                  <br>Add some colour to your wall!
+                </p>
+                <h5 class="card-title">$70.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1Cx4I.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Classic Tiles Green-White Wallpaper</b>
+                  <br>A simple and classic look for your wall.
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CfTJ.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Rattan Plait Wallpaper</b>
+                  <br>Give a textured look to your wall.
+                </p>
+                <h5 class="card-title">$45.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1Cqhv.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>50x40cm Copper Mirror</b>
+                  <br>Copper engravings, giving that vintage look.                
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1CFpa.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Night Pendant Lamp</b>
+                  <br>A perfect way to add an extra touch of tasteful decoration.
+                </p>
+                <h5 class="card-title">$50.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://iili.io/Ht1C2YF.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Living Room Decoration Lamps</b>
+                  <br>Make a lasting impression and create a welcoming environment.
+                </p>
+                <h5 class="card-title">$70.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row container-fluid p-0">
+        <div class="col offset"></div>
+        <div class="col-1 p-2" id="go_up">
+            <a href="#up"><i class="fa-solid fa-circle-arrow-up fa-3x"></i></a>
+        </div>            
+    </div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+          <div class="row text-center pt-3">
+              <h3>Follow First Class Interiors</h3>
+          </div>
+          <div class="row text-center">
+              <section class="col offset"></section>
+              <section class="col-1">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>                       
+              </section>
+              <section class="col-1">
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://nz.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              </section>
+              <section class="col offset"></section>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center pb-2">
+              © 2022 Copyright: All rights reserved.
+          </div>
+          <!-- Copyright -->
+      </div>
+  </footer>
+</body>
+</html>

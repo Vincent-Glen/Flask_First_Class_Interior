@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- link to Bootstrap 5 CDN CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- link to Google Fonts used -->
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+ 
+     <!-- icon references -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact.css')}}" />
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css')}}" />
+    <link href="../Images/New_Logo1.png" rel="icon" type="icon type">
+    <title>Contact Us</title>
+</head>
+<body style="background-color: #f0edc7; font-family: 'Josefin Sans', sans-serif;">
+    <header id="up" class="row container-fluid p-0 m-0">
+      <div class="col-3"><a href="../HTML/home.html"><img src="https://iili.io/Ht1FcwQ.png" width="80px" height="auto" style="margin: 5px;"></a></div>
+      <div class="col-6 py-3 text-center"><h1 id="heading">Captivate interiors</h1></div>
+      <div class="col-3 offset"></div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm p-0 m-0">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+                <a href="{{ url_for('shop') }}" class="navbar-brand">Shop</a>
+                <a href="{{ url_for('about') }}" class="navbar-brand">About</a>
+                <a href="{{ url_for('contact') }}" class="navbar-brand">Contact</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 m-0">
+        <div class="container pt-3">
+          <div class="row text-center">
+            <h2 id="contact_title">Contact Us</h2>
+          </div>
+          <!-- Contact Information -->
+          <div class="row text-center">
+              <p id="contact_info" style="text-shadow: 1px 1px white;">
+                21 Thisway Road, Auckland 1111 New Zealand
+                <br>
+                Phone: 027-XXX-XXXX
+                <br>
+                Email: definitelyexist@noitsnot.com
+                <br>
+                Fax number: 000-123-4567
+                <br><br>
+                Or you can send us a message through the form below.
+              </p>
+          </div>
+          <div class="row mx-5">
+            <div class="col offset"></div>
+            <form class="col-8">
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Name</label>
+                <input type="text" class="form-control" placeholder="Enter name" name="text">                
+              </div>
+            
+              <!-- Email input -->
+              <div class="form-outline mb-4">                
+                <label class="form-label" for="form4Example2">Email</label>
+                <input type="email" class="form-control" placeholder="Enter email" name="email">
+              </div>
+
+              <!-- Subject input -->
+              <div class="form-outline mb-4">                
+                <label class="form-label" for="form4Example5">Subject</label>
+                <input type="text" class="form-control" placeholder="Enter subject" name="text">
+              </div>
+            
+              <!-- Message input -->
+              <div class="form-outline mb-4">                
+                <label class="form-label" for="form4Example3">Your message</label>
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              </div>
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" />
+                <label class="form-check-label" for="form4Example4" style="font-weight:normal;">
+                  Send me a copy of this message
+                </label>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">Send</button>
+            </form>
+            <div class="col offset"></div>
+          </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+          <div class="row text-center pt-3">
+              <h3>Follow First Class Interiors</h3>
+          </div>
+          <div class="row text-center">
+              <section class="col offset"></section>
+              <section class="col-1">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>                       
+              </section>
+              <section class="col-1">
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://nz.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              </section>
+              <section class="col-1">
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              </section>
+              <section class="col offset"></section>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center pb-2">
+              © 2022 Copyright: All rights reserved.
+          </div>
+          <!-- Copyright -->
+      </div>
+  </footer>
+
+    <!-- As per client's request, no functions are currently used. But we decide to keep this page linked to its javascript file-->
+    <script src="../Javascript/contact_us.js"></script>
+</body>
+</html>

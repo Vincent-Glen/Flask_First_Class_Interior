@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- This line is about adjusting the width size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to Bootstrap 5 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- link to Google Fonts used -->
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!-- icon references -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css')}}" />
+
+
+
+    <link href="" rel="icon" type="icon type">
+
+    <title>Captivate Interiors</title>
+</head>
+<body style="background-color: #f0edc7; font-family: 'Josefin Sans', sans-serif;">
+    <header id="up" class="row container-fluid p-0 m-0">
+        <div class="col-3"><a href="../HTML/home.html"><img src="https://iili.io/Ht1FcwQ.png" width="80px" height="auto" style="margin: 5px;"></a></div>
+        <div class="col-6 py-3 text-center"><h1 id="heading">Captivate interiors</h1></div>
+        <div class="col-3 offset"></div>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm p-0 m-0">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
+                <a href="{{ url_for('shop') }}" class="navbar-brand">Shop</a>
+                <a href="{{ url_for('about') }}" class="navbar-brand">About</a>
+                <a href="{{ url_for('contact') }}" class="navbar-brand">Contact</a>
+              </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row py-4">
+            <h3 style="font-family: 'Dancing Script', cursive; text-align: center;">Celebrate living with fine designing.</h3>
+        </div>
+        <!-- Restaurants -->
+        <div class="row text-center pb-3">
+            <h2 style="font-weight:bold;">Restaurants</h2>
+        </div>
+        <section class="row text-center">            
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1K1ef.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Barker Restaurant</h4>
+                        A project in Orewa, Auckland. A restaurant which has a unique vintage style...
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1f3kG.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Richmond Restaurant</h4>
+                        Here's our latest project in Auckland, New Zealand. It's a renovation project with an objective to provide a platform for art students...
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1fHrX.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Birch Bar</h4>
+                           A project in Remuera, Auckland, where nature vibe is the main selling point in this interior design...
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Hotels -->
+        <div class="row text-center pb-3">
+            <h2 class="pt-5" style="font-weight:bold;">Hotels</h2>
+        </div>
+        <section class="row text-center">            
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1fpuj.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Hotelscape</h4>
+                        A challenging project, where our team are required to design a narrow space but still make it spacious...                        
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1fbyb.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Garnet Hotel</h4>
+                        Our latest project. As the name suggests, our client wants the interior design to be related to garnet stone and its earthly colour...          
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1fD8u.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Attract Hotel</h4>
+                        A project where simplicity and vibrant colours are the themes the rooms has to follow...                       
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Offices -->
+        <div class="row text-center pb-3">
+            <h2 class="pt-5" style="font-weight:bold;">Offices</h2>
+        </div>
+        <section class="row text-center">            
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1q5Sn.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Target Office</h4>
+                        A project where simple and modern are the main priority...                        
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1qY9s.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Vertex Office</h4>
+                        Our latest office project in Auckland, where our client wants to use natural light to enhance the atmosphere of the room...                      
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1qaAG.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Strive Office</h4>
+                        A project with a challenging task where our team must design a comfortable office meeting space that also demands the people to strive better...                 
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Homes -->
+        <div class="row text-center pb-3">
+            <h2 class="pt-5" style="font-weight:bold;">Homes</h2>
+        </div>
+        <section class="row text-center">            
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1qNNj.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Benson House</h4>
+                        A project in Remuera, Auckland. Modern simplicity are the trend for the past years, and our team wish to push the boundary of how creative a simple thing could be.                        
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1qkoQ.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Birch House</h4>
+                        Our latest project in Stanley Point, Auckland, is one where a 'homey' atmosphere is our main priority. The client wish for his paintings to blend well with his living room, and so a cool colour palette is used...                   
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="https://iili.io/Ht1qODx.jpg" style="width:90%">
+                    <figcaption class="mt-3">
+                        <h4>Ridge House</h4>
+                        A project where the client wish to make their sofa the main point of their living room, while also putting it in the corner, near the windows...                     
+                    </figcaption>
+                </figure>
+            </div>
+        </section>                
+    </div>
+    <div class="row container-fluid p-0">
+        <div class="col offset"></div>
+        <div class="col-1 p-2" id="go_up">
+            <a href="#up"><i class="fa-solid fa-circle-arrow-up fa-3x"></i></a>
+        </div>            
+    </div>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row text-center pt-3">
+                <h3>Follow First Class Interiors</h3>
+            </div>
+            <div class="row text-center">
+                <section class="col offset"></section>
+                <section class="col-1">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>                       
+                </section>
+                <section class="col-1">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                </section>
+                <section class="col-1">
+                    <a href="https://nz.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                </section>
+                <section class="col-1">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                </section>
+                <section class="col offset"></section>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center pb-2">
+                © 2022 Copyright: All rights reserved.
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+</body>
+</html>
